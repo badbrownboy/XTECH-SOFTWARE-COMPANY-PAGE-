@@ -1,0 +1,30 @@
+/* Styles to ensure navigation stays consistent */
+#navbar {
+    /* Explicitly prevent any transition or animation that might be inherited */
+    transition: none !important;
+    animation: none !important;
+}
+
+#navbar.scrolled,
+#navbar:not(.scrolled) {
+    /* Force the same styling whether scrolled or not */
+    background: rgba(24, 24, 40, 0.85) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 2px solid rgba(37, 99, 235, 0.12) !important;
+    box-shadow: 0 2px 16px rgba(24, 24, 40, 0.12) !important;
+}
+
+/* Ensure links in navbar also have consistent styling */
+#navbar .nav-links a {
+    transition: color 0.3s ease !important; /* Only allow color transition */
+    /* All other properties should remain static */
+    transform: none !important;
+    opacity: 1 !important;
+}
+
+/* Ensure the navbar doesn't change height */
+#navbar, #navbar.scrolled {
+    padding: 0.7rem 2.5rem 0.7rem 1.2rem !important;
+    height: auto !important;
+}

@@ -1,0 +1,116 @@
+/* Static Tech Icons without animation */
+.tech-3d-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    margin-top: 10px;
+    /* Animation removed to prevent interference with content */
+}
+
+/* Tech Logos Section */
+.tech-logo {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: visible;
+}
+
+.tech-logo:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.logo-name {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Tech specific styling */
+.tensorflow-icon {
+    background: linear-gradient(45deg, #FF6F00, #FF9E80);
+    opacity: 0.2;
+}
+
+.pytorch-icon {
+    background: linear-gradient(45deg, #EE4C2C, #F05D3C);
+    opacity: 0.2;
+}
+
+.huggingface-icon {
+    background: linear-gradient(45deg, #FFD166, #FFAA00);
+    opacity: 0.2;
+}
+
+.openai-icon {
+    background: linear-gradient(45deg, #10a37f, #0D8C6F);
+    opacity: 0.2;
+}
+
+.react-icon {
+    background: linear-gradient(45deg, #61DAFB, #00B7C3);
+    opacity: 0.2;
+}
+
+.vue-icon {
+    background: linear-gradient(45deg, #42b883, #35495e);
+    opacity: 0.2;
+}
+
+.typescript-icon {
+    background: linear-gradient(45deg, #3178c6, #235A97);
+    opacity: 0.2;
+}
+
+.nextjs-icon {
+    background: linear-gradient(45deg, #000000, #333333);
+    opacity: 0.2;
+}
+
+.react-native-icon {
+    background: linear-gradient(45deg, #61DAFB, #0093B7);
+    opacity: 0.2;
+}
+
+.flutter-icon {
+    background: linear-gradient(45deg, #0175C2, #02569B);
+    opacity: 0.2;
+}
+
+.swift-icon {
+    background: linear-gradient(45deg, #FA7343, #FF3A2D);
+    opacity: 0.2;
+}
+
+.kotlin-icon {
+    background: linear-gradient(45deg, #7F52FF, #C811E2);
+    opacity: 0.2;
+}

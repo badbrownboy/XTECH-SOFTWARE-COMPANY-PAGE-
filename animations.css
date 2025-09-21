@@ -1,0 +1,117 @@
+/* Animation Keyframes */
+@keyframes float {
+    0%, 100% { 
+        transform: translate(0, 0) rotate(0deg); 
+    }
+    25% { 
+        transform: translate(-10%, 10%) rotate(90deg); 
+    }
+    50% { 
+        transform: translate(10%, -10%) rotate(180deg); 
+    }
+    75% { 
+        transform: translate(-5%, -5%) rotate(270deg); 
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Wave Animation (moved from styles.css for organization) */
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Particle Float Animation (moved from styles.css for organization) */
+@keyframes floatUp {
+    0% {
+        bottom: -10%;
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-30px);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    75% {
+        transform: translateX(-15px);
+    }
+    100% {
+        bottom: 110%;
+        transform: translateX(0);
+    }
+}
+
+/* Hero Animations */
+.hero::before {
+    animation: float 20s ease-in-out infinite;
+}
+
+.hero h1 {
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero p {
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+/* Service Card Initial State for Scroll Animation */
+.service-card {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.service-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered Animation Delays */
+.service-card:nth-child(1) { transition-delay: 0s; }
+.service-card:nth-child(2) { transition-delay: 0.1s; }
+.service-card:nth-child(3) { transition-delay: 0.2s; }
+.service-card:nth-child(4) { transition-delay: 0.3s; }
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1), transform 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes arrow-move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes testimonial-color_anim {
+    0% { fill: white; }
+    50% { fill: var(--color-background); }
+    100% { fill: #9ee5fa; }
+}
+
+@-webkit-keyframes testimonial-arrow-content {
+    0% { outline: 0.2em solid var(--color-background); outline-offset: 0; }
+}
+
+@keyframes testimonial-arrow-content {
+    0% { outline: 0.2em solid var(--color-background); outline-offset: 0; }
+}

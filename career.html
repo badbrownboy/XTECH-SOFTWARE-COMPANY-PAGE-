@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X TECH | Innovation & Technology Solutions</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="career.css">
+    <link rel="stylesheet" href="career-nav-fix.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo">
+                    X TECH
+                </a>
+                <div class="nav-links">
+                    <a href="../../index.html#about">About us</a>
+                    <a href="work.html">Work</a>
+                    <a href="process.html">Process</a>
+                    <a href="app.html">Apps</a>
+                    <a href="#" class="active">Careers</a>
+                    <a href="../../index.html#contact" class="cta-button">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero fade-in-section">
+        <div class="waves">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        </div>
+        <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        </div>
+        <div class="hero-content">
+        <h1>Join Our Team</h1>
+        <p>
+            Ready to shape the future of technology? At X TECH, we're always looking for talented, 
+            passionate individuals to join our growing team. Explore opportunities to work on cutting-edge 
+            projects and make a real impact.
+        </p>
+        </div>
+    </section>
+
+    <!-- CAREERS SECTION -->
+    <section class="careers-section fade-in-section" id="careers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Current Opportunities</h2>
+                <p>Discover your next career move with X TECH</p>
+            </div>
+            
+            <div class="careers-grid">
+                <div class="career-card">
+                    <div class="career-header">
+                        <h3>Frontend Developer</h3>
+                        <span class="career-type">Full-time</span>
+                    </div>
+                    <div class="career-content">
+                        <p>Join our frontend team to create beautiful, responsive user interfaces using modern technologies like React, Vue, and TypeScript.</p>
+                        <div class="career-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="apply-btn" data-job-title="Frontend Developer">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <div class="career-header">
+                        <h3>Backend Developer</h3>
+                        <span class="career-type">Full-time</span>
+                    </div>
+                    <div class="career-content">
+                        <p>Build scalable backend systems and APIs using Node.js, Python, and cloud technologies to power our applications.</p>
+                        <div class="career-skills">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Database</span>
+                        </div>
+                        <a href="#" class="apply-btn" data-job-title="Backend Developer">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <div class="career-header">
+                        <h3>UI/UX Designer</h3>
+                        <span class="career-type">Part-time</span>
+                    </div>
+                    <div class="career-content">
+                        <p>Design intuitive and engaging user experiences for web and mobile applications using modern design principles.</p>
+                        <div class="career-skills">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe XD</span>
+                            <span class="skill-tag">Prototyping</span>
+                            <span class="skill-tag">User Research</span>
+                        </div>
+                        <a href="#" class="apply-btn" data-job-title="UI/UX Designer">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <div class="career-header">
+                        <h3>Mobile Developer</h3>
+                        <span class="career-type">Contract</span>
+                    </div>
+                    <div class="career-content">
+                        <p>Develop cross-platform mobile applications using React Native or Flutter to reach users on all devices.</p>
+                        <div class="career-skills">
+                            <span class="skill-tag">React Native</span>
+                            <span class="skill-tag">Flutter</span>
+                            <span class="skill-tag">iOS</span>
+                            <span class="skill-tag">Android</span>
+                        </div>
+                        <a href="#" class="apply-btn" data-job-title="Mobile Developer">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="careers-cta">
+                <h3>Don't see the right fit?</h3>
+                <p>We're always looking for talented individuals. Send us your resume and let's talk about future opportunities.</p>
+                <a href="#" class="cta-button" id="contact-cta-btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Submission Modal -->
+    <div id="apply-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 id="modal-job-title">Apply for Position</h2>
+        
+        <form id="application-form" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="resume">Resume</label>
+            <div class="resume-upload-container" id="drop-area">
+              <label for="resume" class="file-upload-label">
+                <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <div class="file-upload-text">Drag and drop your resume here</div>
+                <div class="file-upload-info">or click to browse (PDF, DOCX, max 5MB)</div>
+              </label>
+              <input type="file" id="resume" name="resume" accept=".pdf,.docx" required>
+              <div class="file-preview" id="file-preview">
+                <div class="file-info">
+                  <div class="file-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                      <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="file-name" id="file-name"></div>
+                    <div class="file-size" id="file-size"></div>
+                  </div>
+                </div>
+                <button type="button" class="remove-file" id="remove-file">×</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="cover-letter">Cover Letter (optional)</label>
+            <textarea id="cover-letter" name="cover-letter" rows="4"></textarea>
+          </div>
+          
+          <button type="submit" class="submit-application">Submit Application</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (window.VANTA) {
+          VANTA.GLOBE({
+            el: "#vanta-sections-bg",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            color: 0x8b5cf6,
+            color2: 0x8b5cf6,
+            backgroundColor: 0x000000
+          });
+        }
+
+        // Modal functionality
+        const applyBtns = document.querySelectorAll('.apply-btn');
+        const modal = document.getElementById('apply-modal');
+        const closeModal = document.querySelector('.close-modal');
+
+        applyBtns.forEach(btn => {
+          btn.addEventListener('click', function() {
+            const jobTitle = this.getAttribute('data-job-title');
+            document.getElementById('modal-job-title').innerText = `Apply for ${jobTitle}`;
+            modal.style.display = 'block';
+          });
+        });
+
+        closeModal.addEventListener('click', function() {
+          modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+          if (event.target == modal) {
+            modal.style.display = 'none';
+          }
+        });
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get the modal
+        const modal = document.getElementById('apply-modal');
+        const modalTitle = document.getElementById('modal-job-title');
+        const closeModal = document.querySelector('.close-modal');
+        const applyButtons = document.querySelectorAll('.apply-btn');
+        const applicationForm = document.getElementById('application-form');
+        
+        // Open modal when any "Apply Now" button is clicked
+        applyButtons.forEach(button => {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Get the job title from the parent card
+            const jobTitle = this.closest('.career-card').querySelector('h3').textContent;
+            modalTitle.textContent = `Apply for ${jobTitle}`;
+            
+            // Show modal with animation
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+          });
+        });
+        
+        // Close modal when X is clicked
+        closeModal.addEventListener('click', function() {
+          closeModalFunction();
+        });
+        
+        // Close modal when clicking outside of it
+        window.addEventListener('click', function(e) {
+          if (e.target === modal) {
+            closeModalFunction();
+          }
+        });
+        
+        // Close modal function
+        function closeModalFunction() {
+          modal.classList.remove('show');
+          setTimeout(() => {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';  // Re-enable scrolling
+          }, 300);
+        }
+        
+        // Handle form submission
+        applicationForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Get form data
+          const formData = new FormData(applicationForm);
+          
+          // Here you would typically send the data to your server
+          // For now, we'll just show a success message
+          
+          // Display success message
+          applicationForm.innerHTML = `
+            <div class="success-message">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <h3>Application Submitted!</h3>
+              <p>Thank you for applying. We'll review your application and contact you soon.</p>
+            </div>
+          `;
+          
+          // Close modal after 3 seconds
+          setTimeout(() => {
+            closeModalFunction();
+            // Reset form after modal is closed
+            setTimeout(() => {
+              applicationForm.reset();
+              applicationForm.innerHTML = `
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                  <label for="resume">Resume</label>
+                  <div class="resume-upload-container" id="drop-area">
+                    <label for="resume" class="file-upload-label">
+                      <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                      </svg>
+                      <div class="file-upload-text">Drag and drop your resume here</div>
+                      <div class="file-upload-info">or click to browse (PDF, DOCX, max 5MB)</div>
+                    </label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.docx" required>
+                    <div class="file-preview" id="file-preview">
+                      <div class="file-info">
+                        <div class="file-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                          </svg>
+                        </div>
+                        <div>
+                          <div class="file-name" id="file-name"></div>
+                          <div class="file-size" id="file-size"></div>
+                        </div>
+                      </div>
+                      <button type="button" class="remove-file" id="remove-file">×</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="cover-letter">Cover Letter (optional)</label>
+                  <textarea id="cover-letter" name="cover-letter" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-application">Submit Application</button>
+              `;
+            }, 300);
+          }, 3000);
+        });
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const dropArea = document.getElementById('drop-area');
+        const fileInput = document.getElementById('resume');
+        const filePreview = document.getElementById('file-preview');
+        const fileName = document.getElementById('file-name');
+        const fileSize = document.getElementById('file-size');
+        const removeFile = document.getElementById('remove-file');
+
+        // Prevent default drag behaviors
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+          dropArea.addEventListener(eventName, preventDefaults, false);
+          document.body.addEventListener(eventName, preventDefaults, false);
+        });
+
+        // Highlight drop area when dragging file over it
+        ['dragenter', 'dragover'].forEach(eventName => {
+          dropArea.addEventListener(eventName, highlight, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+          dropArea.addEventListener(eventName, unhighlight, false);
+        });
+
+        // Handle dropped files
+        dropArea.addEventListener('drop', handleDrop, false);
+        
+        // Handle file input change
+        fileInput.addEventListener('change', handleFiles);
+        
+        // Handle remove file button
+        removeFile.addEventListener('click', clearFile);
+
+        function preventDefaults(e) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+
+        function highlight() {
+          dropArea.classList.add('dragover');
+        }
+
+        function unhighlight() {
+          dropArea.classList.remove('dragover');
+        }
+
+        function handleDrop(e) {
+          const dt = e.dataTransfer;
+          const files = dt.files;
+          fileInput.files = files;
+          handleFiles();
+        }
+
+        function handleFiles() {
+          if (fileInput.files.length) {
+            const file = fileInput.files[0];
+            
+            // Validate file type
+            const validTypes = ['.pdf', '.docx', 'application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+            if (!validTypes.some(type => file.name.toLowerCase().endsWith(type) || file.type === type)) {
+              alert('Please upload a PDF or DOCX file.');
+              clearFile();
+              return;
+            }
+            
+            // Validate file size (5MB max)
+            if (file.size > 5 * 1024 * 1024) {
+              alert('File size exceeds 5MB. Please upload a smaller file.');
+              clearFile();
+              return;
+            }
+            
+            // Update preview
+            fileName.textContent = file.name;
+            fileSize.textContent = formatFileSize(file.size);
+            filePreview.classList.add('show');
+          }
+        }
+
+        function formatFileSize(bytes) {
+          if (bytes < 1024) return bytes + ' bytes';
+          else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
+          else return (bytes / 1048576).toFixed(1) + ' MB';
+        }
+
+        function clearFile() {
+          fileInput.value = '';
+          filePreview.classList.remove('show');
+          fileName.textContent = '';
+          fileSize.textContent = '';
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        // Contact button functionality
+        const contactCta = document.getElementById('contact-cta-btn');
+        
+        if (contactCta) {
+          contactCta.addEventListener('click', function(e) {
+            // Instead of showing modal, redirect to the contact section on index.html
+            window.location.href = "../../index.html#contact";
+          });
+        }
+      });
+    </script>
+</body>
+</html>

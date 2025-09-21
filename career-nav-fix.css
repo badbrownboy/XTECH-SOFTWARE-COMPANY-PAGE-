@@ -1,0 +1,63 @@
+/* Career page navigation fix to match work.html */
+/* Styles to ensure navigation stays consistent */
+#navbar {
+    /* Explicitly prevent any transition or animation that might be inherited */
+    transition: none !important;
+    animation: none !important;
+    position: fixed;
+    top: 1.2rem;
+    width: 80%;
+    max-width: 1100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(24, 24, 40, 0.85) !important;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 16px rgba(24, 24, 40, 0.12) !important;
+    z-index: 1000;
+    border: 2px solid rgba(37, 99, 235, 0.12) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+#navbar.scrolled,
+#navbar:not(.scrolled) {
+    /* Force the same styling whether scrolled or not */
+    background: rgba(24, 24, 40, 0.85) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 2px solid rgba(37, 99, 235, 0.12) !important;
+    box-shadow: 0 2px 16px rgba(24, 24, 40, 0.12) !important;
+}
+
+/* Ensure links in navbar also have consistent styling */
+#navbar .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease !important; /* Only allow color transition */
+    /* All other properties should remain static */
+    transform: none !important;
+    opacity: 1 !important;
+}
+
+#navbar .nav-links a.active,
+#navbar .nav-links a:hover {
+    color: var(--primary-purple, #8b5cf6);
+}
+
+#navbar .cta-button {
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.9), rgba(124, 58, 237, 0.9));
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+/* Ensure the navbar doesn't change height */
+#navbar, #navbar.scrolled {
+    padding: 0.7rem 2.5rem 0.7rem 1.2rem !important;
+    height: auto !important;
+}
